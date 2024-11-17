@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://cv6cnsao7pqqa"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_yft0m"]
+[ext_resource type="Texture2D" uid="uid://d3w8ei5vlt5ch" path="res://Sprite_horror player spritesheet.png" id="2_v75ge"]
+[ext_resource type="PackedScene" uid="uid://cm4ufk308lj05" path="res://death.tscn" id="3_t5xsp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7c7ho"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrps3"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55fjj"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5q5f"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8uka"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfygp"]
+atlas = ExtResource("2_v75ge")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x0ufn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7c7ho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrps3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55fjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5q5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8uka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfygp")
+}],
+"loop": true,
+"name": &"deflt",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_enqib"]
+radius = 9.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_yft0m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_x0ufn")
+animation = &"deflt"
+autoplay = "deflt"
+frame_progress = 0.465243
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(1, -8)
+scale = Vector2(1, 0.963297)
+target_position = Vector2(-10, 0)
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+position = Vector2(-2, -8)
+target_position = Vector2(11, 0)
+
+[node name="Area2D" parent="." instance=ExtResource("3_t5xsp")]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_enqib")

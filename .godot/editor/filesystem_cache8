@@ -1,0 +1,52 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731836981
+audio_stream_player_2d.gd::GDScript::-1::1731740580::0::1::::<>AudioStreamPlayer2D<>::
+bg.png::CompressedTexture2D::1561608694451732455::1731744135::1731744157::1::::<><>::
+CustomMusic.mp3::AudioStreamMP3::9147961506495582839::1731740002::1731740846::1::::<><>::
+death.tscn::PackedScene::5676198284403631388::1731763637::0::1::::<><>::res://kill.gd
+enemy.gd::GDScript::-1::1731505849::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::6310948389566801688::1731763637::0::1::::<><>::res://enemy.gd<>uid://d3w8ei5vlt5ch::::res://Sprite_horror player spritesheet.png<>uid://cm4ufk308lj05::::res://death.tscn
+icon.png::CompressedTexture2D::2940603722921739585::1731743534::1731743602::1::::<><>::
+kill.gd::GDScript::-1::1731736369::0::1::::<>Area2D<>::
+main.tscn::PackedScene::9022858730651376094::1731763637::0::1::::<><>::uid://d2xwisks0d6ok::::res://GraveyardTilesetNew/vector/Tile.svg<>uid://d3llubo31qhyl::::res://CustomMusic.mp3<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://cv6cnsao7pqqa::::res://enemy.tscn<>uid://cm4ufk308lj05::::res://death.tscn
+movement.gd::GDScript::-1::1731736666::0::1::::<>CharacterBody2D<>::
+player b.png::CompressedTexture2D::2021728984352924382::1731417504::1731417572::1::::<><>::
+player.tscn::PackedScene::101512695037335548::1731763637::0::1::::<><>::res://movement.gd<>uid://32lt0vngltle::::res://player b.png
+Sprite_horror player spritesheet.png::CompressedTexture2D::9171977254970996651::1731417424::1731417572::1::::<><>::
+::res://GraveyardTilesetNew/::1731416960
+::res://GraveyardTilesetNew/png/::1731416977
+BG.png::CompressedTexture2D::4711862497822198782::1468028496::1731416977::1::::<><>::
+::res://GraveyardTilesetNew/png/Objects/::1731416976
+ArrowSign.png::CompressedTexture2D::2875488353936239936::1468028526::1731416976::1::::<><>::
+Bush (1).png::CompressedTexture2D::6255750185271918316::1468028526::1731416976::1::::<><>::
+Bush (2).png::CompressedTexture2D::8361693451654891330::1468028526::1731416976::1::::<><>::
+Crate.png::CompressedTexture2D::1213615167732020395::1468028526::1731416976::1::::<><>::
+DeadBush.png::CompressedTexture2D::7865180150502058735::1468028526::1731416976::1::::<><>::
+Sign.png::CompressedTexture2D::5296061739768752279::1468028526::1731416976::1::::<><>::
+Skeleton.png::CompressedTexture2D::83573798246366251::1468028526::1731416976::1::::<><>::
+TombStone (1).png::CompressedTexture2D::8995493401666559475::1468028526::1731416976::1::::<><>::
+TombStone (2).png::CompressedTexture2D::8041212259694955573::1468028526::1731416976::1::::<><>::
+Tree.png::CompressedTexture2D::4638837627670652518::1468028526::1731416976::1::::<><>::
+::res://GraveyardTilesetNew/png/Tiles/::1731416976
+Bone (1).png::CompressedTexture2D::7247474382474287651::1480901916::1731416976::1::::<><>::
+Bone (2).png::CompressedTexture2D::1709043217482056436::1480901916::1731416976::1::::<><>::
+Bone (3).png::CompressedTexture2D::603699837337526769::1480901916::1731416976::1::::<><>::
+Bone (4).png::CompressedTexture2D::9117044727150639307::1480901916::1731416976::1::::<><>::
+Tile (1).png::CompressedTexture2D::2610900042067009357::1480901914::1731416976::1::::<><>::
+Tile (2).png::CompressedTexture2D::1685847047084654888::1480901914::1731416976::1::::<><>::
+Tile (3).png::CompressedTexture2D::2089965280404542186::1480901914::1731416976::1::::<><>::
+Tile (4).png::CompressedTexture2D::5007580460119598013::1480901916::1731416976::1::::<><>::
+Tile (5).png::CompressedTexture2D::909374918712096408::1480901916::1731416976::1::::<><>::
+Tile (6).png::CompressedTexture2D::5960591354946551289::1480901916::1731416976::1::::<><>::
+Tile (7).png::CompressedTexture2D::5674638078867785821::1480901916::1731416976::1::::<><>::
+Tile (8).png::CompressedTexture2D::2534337688994661811::1480901916::1731416976::1::::<><>::
+Tile (9).png::CompressedTexture2D::7718389811832408849::1480901916::1731416976::1::::<><>::
+Tile (10).png::CompressedTexture2D::1363428591440736639::1480901916::1731416976::1::::<><>::
+Tile (11).png::CompressedTexture2D::3771357111728074538::1480901916::1731416976::1::::<><>::
+Tile (12).png::CompressedTexture2D::3479257301816968671::1480901916::1731416976::1::::<><>::
+Tile (13).png::CompressedTexture2D::1313042417771950278::1480901916::1731416976::1::::<><>::
+Tile (14).png::CompressedTexture2D::2232369129142556733::1480901916::1731416976::1::::<><>::
+Tile (15).png::CompressedTexture2D::758311033173784614::1480901916::1731416976::1::::<><>::
+Tile (16).png::CompressedTexture2D::3098882318320731902::1480901916::1731416976::1::::<><>::
+::res://GraveyardTilesetNew/vector/::1731416977
+Tile.svg::CompressedTexture2D::9103192539561400778::1468028168::1731416977::1::::<><>::
