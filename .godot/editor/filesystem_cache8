@@ -1,52 +1,80 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731836981
+::res://::1732205301
 audio_stream_player_2d.gd::GDScript::-1::1731740580::0::1::::<>AudioStreamPlayer2D<>::
 bg.png::CompressedTexture2D::1561608694451732455::1731744135::1731744157::1::::<><>::
 CustomMusic.mp3::AudioStreamMP3::9147961506495582839::1731740002::1731740846::1::::<><>::
-death.tscn::PackedScene::5676198284403631388::1731763637::0::1::::<><>::res://kill.gd
-enemy.gd::GDScript::-1::1731505849::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::6310948389566801688::1731763637::0::1::::<><>::res://enemy.gd<>uid://d3w8ei5vlt5ch::::res://Sprite_horror player spritesheet.png<>uid://cm4ufk308lj05::::res://death.tscn
+death.tscn::PackedScene::5676198284403631388::1732205199::0::1::::<><>::res://kill.gd
+enemy.gd::GDScript::-1::1732195194::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::6310948389566801688::1732205301::0::1::::<><>::res://enemy.gd<>uid://6mp22ms1v1ov::::res://Gamefiles/Mob/Boar/Walk/Walk-Base-Sheet.png
 icon.png::CompressedTexture2D::2940603722921739585::1731743534::1731743602::1::::<><>::
-kill.gd::GDScript::-1::1731736369::0::1::::<>Area2D<>::
-main.tscn::PackedScene::9022858730651376094::1731763637::0::1::::<><>::uid://d2xwisks0d6ok::::res://GraveyardTilesetNew/vector/Tile.svg<>uid://d3llubo31qhyl::::res://CustomMusic.mp3<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://cv6cnsao7pqqa::::res://enemy.tscn<>uid://cm4ufk308lj05::::res://death.tscn
-movement.gd::GDScript::-1::1731736666::0::1::::<>CharacterBody2D<>::
+kill.gd::GDScript::-1::1732194685::0::1::::<>Area2D<>::
+main.tscn::PackedScene::9022858730651376094::1732205301::0::1::::<><>::uid://d3llubo31qhyl::::res://CustomMusic.mp3<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://cv6cnsao7pqqa::::res://enemy.tscn<>uid://cm4ufk308lj05::::res://death.tscn<>uid://cfv4c0cukkwg2::::res://Gamefiles/Assets/Tiles.png
+movement.gd::GDScript::-1::1732195380::0::1::::<>CharacterBody2D<>::
 player b.png::CompressedTexture2D::2021728984352924382::1731417504::1731417572::1::::<><>::
-player.tscn::PackedScene::101512695037335548::1731763637::0::1::::<><>::res://movement.gd<>uid://32lt0vngltle::::res://player b.png
+player.tscn::PackedScene::101512695037335548::1732205301::0::1::::<><>::res://movement.gd<>uid://d4be0r80k55vk::::res://Gamefiles/Character/Attack-01/Attack-01-Sheet.png<>uid://cy4h3by3srm1a::::res://Gamefiles/Character/Idle/Idle-Sheet.png<>uid://jj7ii8gcpkl7::::res://Gamefiles/Character/Jumlp-All/Jump-All-Sheet.png<>uid://hlehijrd6s4w::::res://Gamefiles/Character/Run/Run-Sheet.png
 Sprite_horror player spritesheet.png::CompressedTexture2D::9171977254970996651::1731417424::1731417572::1::::<><>::
-::res://GraveyardTilesetNew/::1731416960
-::res://GraveyardTilesetNew/png/::1731416977
-BG.png::CompressedTexture2D::4711862497822198782::1468028496::1731416977::1::::<><>::
-::res://GraveyardTilesetNew/png/Objects/::1731416976
-ArrowSign.png::CompressedTexture2D::2875488353936239936::1468028526::1731416976::1::::<><>::
-Bush (1).png::CompressedTexture2D::6255750185271918316::1468028526::1731416976::1::::<><>::
-Bush (2).png::CompressedTexture2D::8361693451654891330::1468028526::1731416976::1::::<><>::
-Crate.png::CompressedTexture2D::1213615167732020395::1468028526::1731416976::1::::<><>::
-DeadBush.png::CompressedTexture2D::7865180150502058735::1468028526::1731416976::1::::<><>::
-Sign.png::CompressedTexture2D::5296061739768752279::1468028526::1731416976::1::::<><>::
-Skeleton.png::CompressedTexture2D::83573798246366251::1468028526::1731416976::1::::<><>::
-TombStone (1).png::CompressedTexture2D::8995493401666559475::1468028526::1731416976::1::::<><>::
-TombStone (2).png::CompressedTexture2D::8041212259694955573::1468028526::1731416976::1::::<><>::
-Tree.png::CompressedTexture2D::4638837627670652518::1468028526::1731416976::1::::<><>::
-::res://GraveyardTilesetNew/png/Tiles/::1731416976
-Bone (1).png::CompressedTexture2D::7247474382474287651::1480901916::1731416976::1::::<><>::
-Bone (2).png::CompressedTexture2D::1709043217482056436::1480901916::1731416976::1::::<><>::
-Bone (3).png::CompressedTexture2D::603699837337526769::1480901916::1731416976::1::::<><>::
-Bone (4).png::CompressedTexture2D::9117044727150639307::1480901916::1731416976::1::::<><>::
-Tile (1).png::CompressedTexture2D::2610900042067009357::1480901914::1731416976::1::::<><>::
-Tile (2).png::CompressedTexture2D::1685847047084654888::1480901914::1731416976::1::::<><>::
-Tile (3).png::CompressedTexture2D::2089965280404542186::1480901914::1731416976::1::::<><>::
-Tile (4).png::CompressedTexture2D::5007580460119598013::1480901916::1731416976::1::::<><>::
-Tile (5).png::CompressedTexture2D::909374918712096408::1480901916::1731416976::1::::<><>::
-Tile (6).png::CompressedTexture2D::5960591354946551289::1480901916::1731416976::1::::<><>::
-Tile (7).png::CompressedTexture2D::5674638078867785821::1480901916::1731416976::1::::<><>::
-Tile (8).png::CompressedTexture2D::2534337688994661811::1480901916::1731416976::1::::<><>::
-Tile (9).png::CompressedTexture2D::7718389811832408849::1480901916::1731416976::1::::<><>::
-Tile (10).png::CompressedTexture2D::1363428591440736639::1480901916::1731416976::1::::<><>::
-Tile (11).png::CompressedTexture2D::3771357111728074538::1480901916::1731416976::1::::<><>::
-Tile (12).png::CompressedTexture2D::3479257301816968671::1480901916::1731416976::1::::<><>::
-Tile (13).png::CompressedTexture2D::1313042417771950278::1480901916::1731416976::1::::<><>::
-Tile (14).png::CompressedTexture2D::2232369129142556733::1480901916::1731416976::1::::<><>::
-Tile (15).png::CompressedTexture2D::758311033173784614::1480901916::1731416976::1::::<><>::
-Tile (16).png::CompressedTexture2D::3098882318320731902::1480901916::1731416976::1::::<><>::
-::res://GraveyardTilesetNew/vector/::1731416977
-Tile.svg::CompressedTexture2D::9103192539561400778::1468028168::1731416977::1::::<><>::
+::res://Gamefiles/::1731860875
+::res://Gamefiles/Assets/::1731862829
+Buildings.png::CompressedTexture2D::3179819904812760383::1664881552::1732205301::1::::<><>::
+Hive.png::CompressedTexture2D::5194334705658356822::1664881412::1732205301::1::::<><>::
+Interior-01.png::CompressedTexture2D::2718765669286587052::1667217930::1732205301::1::::<><>::
+Props-Rocks.png::CompressedTexture2D::4878825898395366542::1664881204::1732205301::1::::<><>::
+Tiles.png::CompressedTexture2D::5168903199885509551::1667217974::1732205301::1::::<><>::
+Tree-Assets.png::CompressedTexture2D::7351726799465766172::1667217990::1732205301::1::::<><>::
+::res://Gamefiles/Background/::1731862829
+Background.png::CompressedTexture2D::7735706874362690726::1667218646::1732205301::1::::<><>::
+::res://Gamefiles/Character/::1664881732
+::res://Gamefiles/Character/Attack-01/::1731862829
+Attack-01-Sheet.png::CompressedTexture2D::9197091352180951996::1657203656::1732205301::1::::<><>::
+::res://Gamefiles/Character/Dead/::1731862829
+Dead-Sheet.png::CompressedTexture2D::2823582392687247865::1657206608::1732205301::1::::<><>::
+::res://Gamefiles/Character/Idle/::1731862829
+Idle-Sheet.png::CompressedTexture2D::6517715681641000140::1657195076::1732205301::1::::<><>::
+::res://Gamefiles/Character/Jumlp-All/::1731862829
+Jump-All-Sheet.png::CompressedTexture2D::652236694089829078::1657206636::1732205301::1::::<><>::
+::res://Gamefiles/Character/Jump/::1664881732
+::res://Gamefiles/Character/Jump-End/::1731862829
+Jump-End-Sheet.png::CompressedTexture2D::4730062991152501044::1657206770::1732205301::1::::<><>::
+::res://Gamefiles/Character/Jump-Start/::1731862829
+Jump-Start-Sheet.png::CompressedTexture2D::8825197128097955592::1657206716::1732205301::1::::<><>::
+::res://Gamefiles/Character/Run/::1731862829
+Run-Sheet.png::CompressedTexture2D::514285864156976704::1657195042::1732205301::1::::<><>::
+::res://Gamefiles/HUD/::1731862829
+Base-01.png::CompressedTexture2D::8405148721993177144::1656571566::1732205301::1::::<><>::
+::res://Gamefiles/Mob/::1664881732
+::res://Gamefiles/Mob/Boar/::1664881732
+::res://Gamefiles/Mob/Boar/Hit-Vanish/::1731862829
+Hit-Sheet-Black.png::CompressedTexture2D::1228738638104158357::1664005224::1732205301::1::::<><>::
+Hit-Sheet-White.png::CompressedTexture2D::7897282813364262409::1664005254::1732205301::1::::<><>::
+Hit-Sheet.png::CompressedTexture2D::3663197144569213387::1656660542::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Boar/Idle/::1731862829
+Idle-Sheet-export-Back.png::CompressedTexture2D::1300264391420954118::1664005136::1732205301::1::::<><>::
+Idle-Sheet-White.png::CompressedTexture2D::6026356280292625025::1664005174::1732205301::1::::<><>::
+Idle-Sheet.png::CompressedTexture2D::3562503413669148604::1656660570::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Boar/Run/::1731862829
+Run-Sheet-Black.png::CompressedTexture2D::6226492276469221333::1664004952::1732205301::1::::<><>::
+Run-Sheet-White.png::CompressedTexture2D::9081150328321529664::1664005004::1732205301::1::::<><>::
+Run-Sheet.png::CompressedTexture2D::652372946921065463::1656660590::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Boar/Walk/::1731862829
+Walk-Base-Sheet-White.png::CompressedTexture2D::8566723131469579821::1664005092::1732205301::1::::<><>::
+Walk-Base-Sheet.png::CompressedTexture2D::2201587094676195553::1656660616::1732205301::1::::<><>::
+Walk-Base-SheetBlack.png::CompressedTexture2D::4369169811978829408::1664005046::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Small Bee/::1664881732
+::res://Gamefiles/Mob/Small Bee/Attack/::1731862829
+Attack-Sheet.png::CompressedTexture2D::5735944867108316827::1664535146::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Small Bee/Fly/::1731862829
+Fly-Sheet.png::CompressedTexture2D::4588890485060140295::1664535162::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Small Bee/Hit/::1731862829
+Hit-Sheet.png::CompressedTexture2D::8225938651567886312::1664535182::1732205301::1::::<><>::
+::res://Gamefiles/Mob/Snail/::1731862829
+all.png::CompressedTexture2D::3360819291865070763::1635493046::1732205301::1::::<><>::
+Dead-Sheet.png::CompressedTexture2D::6207619937701676378::1635493046::1732205301::1::::<><>::
+Hide-Sheet.png::CompressedTexture2D::4661465485662788434::1635493046::1732205301::1::::<><>::
+walk-Sheet.png::CompressedTexture2D::4766469031172281014::1635493046::1732205301::1::::<><>::
+::res://Gamefiles/Trees/::1731862830
+Background.png::CompressedTexture2D::4580186444768294814::1664881680::1732205301::1::::<><>::
+Dark-Tree.png::CompressedTexture2D::8650952693588486698::1657211636::1732205302::1::::<><>::
+Golden-Tree.png::CompressedTexture2D::5433397779652261812::1657006518::1732205302::1::::<><>::
+Green-Tree.png::CompressedTexture2D::8692171913816938::1657006032::1732205302::1::::<><>::
+Red-Tree.png::CompressedTexture2D::8587719390928962066::1657006532::1732205302::1::::<><>::
+Yellow-Tree.png::CompressedTexture2D::5163755052116086484::1657006164::1732205302::1::::<><>::

@@ -1,84 +1,130 @@
-[gd_scene load_steps=12 format=3 uid="uid://cv6cnsao7pqqa"]
+[gd_scene load_steps=14 format=3 uid="uid://cv6cnsao7pqqa"]
 
 [ext_resource type="Script" path="res://enemy.gd" id="1_yft0m"]
-[ext_resource type="Texture2D" uid="uid://d3w8ei5vlt5ch" path="res://Sprite_horror player spritesheet.png" id="2_v75ge"]
-[ext_resource type="PackedScene" uid="uid://cm4ufk308lj05" path="res://death.tscn" id="3_t5xsp"]
+[ext_resource type="Texture2D" uid="uid://6mp22ms1v1ov" path="res://Gamefiles/Mob/Boar/Walk/Walk-Base-Sheet.png" id="2_lfrmx"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7c7ho"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="Animation" id="Animation_jo1sp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hrps3"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(16, 0, 16, 16)
+[sub_resource type="Animation" id="Animation_vcqh2"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_55fjj"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(32, 0, 16, 16)
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uokss"]
+_data = {
+"RESET": SubResource("Animation_jo1sp"),
+"death": SubResource("Animation_vcqh2")
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t5q5f"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(48, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_t43hl"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(0, 0, 48, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b8uka"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(64, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gn2yf"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(48, 0, 48, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mfygp"]
-atlas = ExtResource("2_v75ge")
-region = Rect2(80, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4mc0"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swxn2"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n07n3"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm0fu"]
+atlas = ExtResource("2_lfrmx")
+region = Rect2(240, 0, 48, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x0ufn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7c7ho")
+"texture": SubResource("AtlasTexture_t43hl")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hrps3")
+"texture": SubResource("AtlasTexture_gn2yf")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_55fjj")
+"texture": SubResource("AtlasTexture_w4mc0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t5q5f")
+"texture": SubResource("AtlasTexture_swxn2")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b8uka")
+"texture": SubResource("AtlasTexture_n07n3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mfygp")
+"texture": SubResource("AtlasTexture_fm0fu")
 }],
 "loop": true,
 "name": &"deflt",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_enqib"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_aicrn"]
 radius = 9.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_yft0m")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uokss")
+}
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(-1, -12)
+scale = Vector2(0.729167, 0.75)
 sprite_frames = SubResource("SpriteFrames_x0ufn")
 animation = &"deflt"
 autoplay = "deflt"
 frame_progress = 0.465243
+flip_h = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(1, -8)
+position = Vector2(-6, -8)
 scale = Vector2(1, 0.963297)
 target_position = Vector2(-10, 0)
+collision_mask = 8
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
-position = Vector2(-2, -8)
-target_position = Vector2(11, 0)
+position = Vector2(5, -8)
+target_position = Vector2(9, 0)
+collision_mask = 8
+collide_with_areas = true
 
-[node name="Area2D" parent="." instance=ExtResource("3_t5xsp")]
-collision_mask = 2
+[node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_enqib")
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_aicrn")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
