@@ -1,0 +1,142 @@
+[gd_scene load_steps=16 format=3 uid="uid://8wb0wvoborln"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wijoc"]
+[ext_resource type="Texture2D" uid="uid://b856bwel45idq" path="res://Gamefiles/Mob/Snail/walk-Sheet.png" id="2_v51bl"]
+
+[sub_resource type="Animation" id="Animation_jo1sp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_vcqh2"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uokss"]
+_data = {
+"RESET": SubResource("Animation_jo1sp"),
+"death": SubResource("Animation_vcqh2")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsr17"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbi3p"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1f27"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdc7v"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsj0u"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksqk0"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(240, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsyb5"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(288, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnofm"]
+atlas = ExtResource("2_v51bl")
+region = Rect2(336, 0, 48, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wh00b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsr17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbi3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1f27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdc7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsj0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksqk0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsyb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnofm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mdnl3"]
+height = 36.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_wijoc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uokss")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_wh00b")
+autoplay = "default"
+flip_h = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-3, -10)
+scale = Vector2(1, 0.963297)
+target_position = Vector2(-16, 0)
+collision_mask = 8
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+position = Vector2(5, -10)
+target_position = Vector2(15, 0)
+collision_mask = 8
+collide_with_areas = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -10)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_mdnl3")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

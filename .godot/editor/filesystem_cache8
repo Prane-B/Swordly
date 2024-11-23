@@ -1,80 +1,86 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732205301
-audio_stream_player_2d.gd::GDScript::-1::1731740580::0::1::::<>AudioStreamPlayer2D<>::
-bg.png::CompressedTexture2D::1561608694451732455::1731744135::1731744157::1::::<><>::
-CustomMusic.mp3::AudioStreamMP3::9147961506495582839::1731740002::1731740846::1::::<><>::
-death.tscn::PackedScene::5676198284403631388::1732205199::0::1::::<><>::res://kill.gd
-enemy.gd::GDScript::-1::1732195194::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::6310948389566801688::1732205301::0::1::::<><>::res://enemy.gd<>uid://6mp22ms1v1ov::::res://Gamefiles/Mob/Boar/Walk/Walk-Base-Sheet.png
-icon.png::CompressedTexture2D::2940603722921739585::1731743534::1731743602::1::::<><>::
-kill.gd::GDScript::-1::1732194685::0::1::::<>Area2D<>::
-main.tscn::PackedScene::9022858730651376094::1732205301::0::1::::<><>::uid://d3llubo31qhyl::::res://CustomMusic.mp3<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://cv6cnsao7pqqa::::res://enemy.tscn<>uid://cm4ufk308lj05::::res://death.tscn<>uid://cfv4c0cukkwg2::::res://Gamefiles/Assets/Tiles.png
-movement.gd::GDScript::-1::1732195380::0::1::::<>CharacterBody2D<>::
-player b.png::CompressedTexture2D::2021728984352924382::1731417504::1731417572::1::::<><>::
-player.tscn::PackedScene::101512695037335548::1732205301::0::1::::<><>::res://movement.gd<>uid://d4be0r80k55vk::::res://Gamefiles/Character/Attack-01/Attack-01-Sheet.png<>uid://cy4h3by3srm1a::::res://Gamefiles/Character/Idle/Idle-Sheet.png<>uid://jj7ii8gcpkl7::::res://Gamefiles/Character/Jumlp-All/Jump-All-Sheet.png<>uid://hlehijrd6s4w::::res://Gamefiles/Character/Run/Run-Sheet.png
-Sprite_horror player spritesheet.png::CompressedTexture2D::9171977254970996651::1731417424::1731417572::1::::<><>::
-::res://Gamefiles/::1731860875
-::res://Gamefiles/Assets/::1731862829
+bdbec74c6e5bd72edee867077d70896c
+::res://::1732347807
+export_presets.cfg::TextFile::-1::1732347758::0::1::::<><>::
+level2.tscn::PackedScene::2679590923846681426::1732347802::0::1::::<><>::uid://cm4ufk308lj05::::res://Enemy/death.tscn<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://cfv4c0cukkwg2::::res://Gamefiles/Assets/Tiles.png<>uid://dc0h4por2hu7e::::res://Gamefiles/Assets/Tree-Assets.png<>uid://dihh7ydh0c6sg::::res://Gamefiles/Background/Background.png<>uid://blklf0wnh7w36::::res://Gamefiles/Assets/Buildings.png<>uid://cbrlsxra66uig::::res://Gamefiles/Assets/Props-Rocks.png<>uid://dr0rtouaxwnkq::::res://Gamefiles/HUD/Base-01.png<>uid://d3llubo31qhyl::::res://Gamefiles/CustomMusic.mp3<>uid://8wb0wvoborln::::res://Enemy/snail.tscn<>uid://du7h1qr8p3dyh::::res://Enemy/bee.tscn
+levelmanager1.tscn::PackedScene::7904298655612279431::1732347802::0::1::::<><>::res://Scripts/levelchange.gd
+main.tscn::PackedScene::9022858730651376094::1732347802::0::1::::<><>::uid://dku5v5q1nj76r::::res://levelmanager1.tscn<>uid://d3llubo31qhyl::::res://Gamefiles/CustomMusic.mp3<>uid://bpf5tsmjbdgm::::res://player.tscn<>uid://dihh7ydh0c6sg::::res://Gamefiles/Background/Background.png<>uid://dc0h4por2hu7e::::res://Gamefiles/Assets/Tree-Assets.png<>uid://blklf0wnh7w36::::res://Gamefiles/Assets/Buildings.png<>uid://cv6cnsao7pqqa::::res://Enemy/Boar.tscn<>uid://cm4ufk308lj05::::res://Enemy/death.tscn<>uid://cbrlsxra66uig::::res://Gamefiles/Assets/Props-Rocks.png<>uid://dr0rtouaxwnkq::::res://Gamefiles/HUD/Base-01.png<>uid://cfv4c0cukkwg2::::res://Gamefiles/Assets/Tiles.png<>uid://du7h1qr8p3dyh::::res://Enemy/bee.tscn<>uid://8wb0wvoborln::::res://Enemy/snail.tscn
+player.tscn::PackedScene::101512695037335548::1732347802::0::1::::<><>::res://Scripts/movement.gd<>uid://d4be0r80k55vk::::res://Gamefiles/Character/Attack-01/Attack-01-Sheet.png<>uid://cy4h3by3srm1a::::res://Gamefiles/Character/Idle/Idle-Sheet.png<>uid://jj7ii8gcpkl7::::res://Gamefiles/Character/Jumlp-All/Jump-All-Sheet.png<>uid://hlehijrd6s4w::::res://Gamefiles/Character/Run/Run-Sheet.png
+::res://Enemy/::1732347802
+bee.tscn::PackedScene::8629571329716552435::1732347802::0::1::::<><>::res://Scripts/enemy.gd<>uid://b6m5mdmcxd7nf::::res://Gamefiles/Mob/Small Bee/Fly/Fly-Sheet.png
+Boar.tscn::PackedScene::6310948389566801688::1732347802::0::1::::<><>::res://Scripts/enemy.gd<>uid://6mp22ms1v1ov::::res://Gamefiles/Mob/Boar/Walk/Walk-Base-Sheet.png
+death.tscn::PackedScene::5676198284403631388::1732347802::0::1::::<><>::res://Scripts/kill.gd
+snail.tscn::PackedScene::2361754701077371079::1732347802::0::1::::<><>::res://Scripts/enemy.gd<>uid://b856bwel45idq::::res://Gamefiles/Mob/Snail/walk-Sheet.png
+::res://Gamefiles/::1732276329
+bg.png::CompressedTexture2D::1561608694451732455::1731744135::1732276314::1::::<><>::
+CustomMusic.mp3::AudioStreamMP3::9147961506495582839::1731740002::1732276282::1::::<><>::
+icon.png::CompressedTexture2D::2940603722921739585::1731743534::1732276315::1::::<><>::
+player b.png::CompressedTexture2D::2021728984352924382::1731417504::1732276329::1::::<><>::
+::res://Gamefiles/Assets/::1732205301
 Buildings.png::CompressedTexture2D::3179819904812760383::1664881552::1732205301::1::::<><>::
 Hive.png::CompressedTexture2D::5194334705658356822::1664881412::1732205301::1::::<><>::
 Interior-01.png::CompressedTexture2D::2718765669286587052::1667217930::1732205301::1::::<><>::
 Props-Rocks.png::CompressedTexture2D::4878825898395366542::1664881204::1732205301::1::::<><>::
 Tiles.png::CompressedTexture2D::5168903199885509551::1667217974::1732205301::1::::<><>::
 Tree-Assets.png::CompressedTexture2D::7351726799465766172::1667217990::1732205301::1::::<><>::
-::res://Gamefiles/Background/::1731862829
+::res://Gamefiles/Background/::1732205301
 Background.png::CompressedTexture2D::7735706874362690726::1667218646::1732205301::1::::<><>::
 ::res://Gamefiles/Character/::1664881732
-::res://Gamefiles/Character/Attack-01/::1731862829
+::res://Gamefiles/Character/Attack-01/::1732205301
 Attack-01-Sheet.png::CompressedTexture2D::9197091352180951996::1657203656::1732205301::1::::<><>::
-::res://Gamefiles/Character/Dead/::1731862829
+::res://Gamefiles/Character/Dead/::1732205301
 Dead-Sheet.png::CompressedTexture2D::2823582392687247865::1657206608::1732205301::1::::<><>::
-::res://Gamefiles/Character/Idle/::1731862829
+::res://Gamefiles/Character/Idle/::1732205301
 Idle-Sheet.png::CompressedTexture2D::6517715681641000140::1657195076::1732205301::1::::<><>::
-::res://Gamefiles/Character/Jumlp-All/::1731862829
+::res://Gamefiles/Character/Jumlp-All/::1732205301
 Jump-All-Sheet.png::CompressedTexture2D::652236694089829078::1657206636::1732205301::1::::<><>::
 ::res://Gamefiles/Character/Jump/::1664881732
-::res://Gamefiles/Character/Jump-End/::1731862829
+::res://Gamefiles/Character/Jump-End/::1732205301
 Jump-End-Sheet.png::CompressedTexture2D::4730062991152501044::1657206770::1732205301::1::::<><>::
-::res://Gamefiles/Character/Jump-Start/::1731862829
+::res://Gamefiles/Character/Jump-Start/::1732205301
 Jump-Start-Sheet.png::CompressedTexture2D::8825197128097955592::1657206716::1732205301::1::::<><>::
-::res://Gamefiles/Character/Run/::1731862829
+::res://Gamefiles/Character/Run/::1732205301
 Run-Sheet.png::CompressedTexture2D::514285864156976704::1657195042::1732205301::1::::<><>::
-::res://Gamefiles/HUD/::1731862829
+::res://Gamefiles/HUD/::1732205301
 Base-01.png::CompressedTexture2D::8405148721993177144::1656571566::1732205301::1::::<><>::
 ::res://Gamefiles/Mob/::1664881732
 ::res://Gamefiles/Mob/Boar/::1664881732
-::res://Gamefiles/Mob/Boar/Hit-Vanish/::1731862829
+::res://Gamefiles/Mob/Boar/Hit-Vanish/::1732205301
 Hit-Sheet-Black.png::CompressedTexture2D::1228738638104158357::1664005224::1732205301::1::::<><>::
 Hit-Sheet-White.png::CompressedTexture2D::7897282813364262409::1664005254::1732205301::1::::<><>::
 Hit-Sheet.png::CompressedTexture2D::3663197144569213387::1656660542::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Boar/Idle/::1731862829
+::res://Gamefiles/Mob/Boar/Idle/::1732205301
 Idle-Sheet-export-Back.png::CompressedTexture2D::1300264391420954118::1664005136::1732205301::1::::<><>::
 Idle-Sheet-White.png::CompressedTexture2D::6026356280292625025::1664005174::1732205301::1::::<><>::
 Idle-Sheet.png::CompressedTexture2D::3562503413669148604::1656660570::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Boar/Run/::1731862829
+::res://Gamefiles/Mob/Boar/Run/::1732205301
 Run-Sheet-Black.png::CompressedTexture2D::6226492276469221333::1664004952::1732205301::1::::<><>::
 Run-Sheet-White.png::CompressedTexture2D::9081150328321529664::1664005004::1732205301::1::::<><>::
 Run-Sheet.png::CompressedTexture2D::652372946921065463::1656660590::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Boar/Walk/::1731862829
+::res://Gamefiles/Mob/Boar/Walk/::1732205301
 Walk-Base-Sheet-White.png::CompressedTexture2D::8566723131469579821::1664005092::1732205301::1::::<><>::
 Walk-Base-Sheet.png::CompressedTexture2D::2201587094676195553::1656660616::1732205301::1::::<><>::
 Walk-Base-SheetBlack.png::CompressedTexture2D::4369169811978829408::1664005046::1732205301::1::::<><>::
 ::res://Gamefiles/Mob/Small Bee/::1664881732
-::res://Gamefiles/Mob/Small Bee/Attack/::1731862829
+::res://Gamefiles/Mob/Small Bee/Attack/::1732205301
 Attack-Sheet.png::CompressedTexture2D::5735944867108316827::1664535146::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Small Bee/Fly/::1731862829
+::res://Gamefiles/Mob/Small Bee/Fly/::1732205301
 Fly-Sheet.png::CompressedTexture2D::4588890485060140295::1664535162::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Small Bee/Hit/::1731862829
+::res://Gamefiles/Mob/Small Bee/Hit/::1732205301
 Hit-Sheet.png::CompressedTexture2D::8225938651567886312::1664535182::1732205301::1::::<><>::
-::res://Gamefiles/Mob/Snail/::1731862829
+::res://Gamefiles/Mob/Snail/::1732205301
 all.png::CompressedTexture2D::3360819291865070763::1635493046::1732205301::1::::<><>::
 Dead-Sheet.png::CompressedTexture2D::6207619937701676378::1635493046::1732205301::1::::<><>::
 Hide-Sheet.png::CompressedTexture2D::4661465485662788434::1635493046::1732205301::1::::<><>::
 walk-Sheet.png::CompressedTexture2D::4766469031172281014::1635493046::1732205301::1::::<><>::
-::res://Gamefiles/Trees/::1731862830
+::res://Gamefiles/Trees/::1732205302
 Background.png::CompressedTexture2D::4580186444768294814::1664881680::1732205301::1::::<><>::
 Dark-Tree.png::CompressedTexture2D::8650952693588486698::1657211636::1732205302::1::::<><>::
 Golden-Tree.png::CompressedTexture2D::5433397779652261812::1657006518::1732205302::1::::<><>::
 Green-Tree.png::CompressedTexture2D::8692171913816938::1657006032::1732205302::1::::<><>::
 Red-Tree.png::CompressedTexture2D::8587719390928962066::1657006532::1732205302::1::::<><>::
 Yellow-Tree.png::CompressedTexture2D::5163755052116086484::1657006164::1732205302::1::::<><>::
+::res://Scripts/::1732345320
+enemy.gd::GDScript::-1::1732345320::0::1::::<>CharacterBody2D<>::
+kill.gd::GDScript::-1::1732194685::0::1::::<>Area2D<>::
+levelchange.gd::GDScript::-1::1732342954::0::1::::<>Area2D<>::
+movement.gd::GDScript::-1::1732344884::0::1::::<>CharacterBody2D<>::

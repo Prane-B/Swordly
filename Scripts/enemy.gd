@@ -20,9 +20,10 @@ func _process(delta):
 	position.x += direction * SPEED * delta
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_attacking:
-		dry.play("death")
-		queue_free()
-	else:
-		get_tree().reload_current_scene()
+	if body is CharacterBody2D:
+		if body.is_attacking:
+			dry.play("death")
+			queue_free()
+		else:
+			get_tree().reload_current_scene()
 	
