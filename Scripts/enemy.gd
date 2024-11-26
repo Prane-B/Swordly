@@ -25,5 +25,5 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			dry.play("death")
 			queue_free()
 		else:
-			get_tree().reload_current_scene()
+			get_tree().call_deferred("reload_current_scene") 
 	

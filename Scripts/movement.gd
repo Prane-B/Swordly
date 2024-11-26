@@ -7,8 +7,13 @@ const JUMP_VELOCITY = -350.0
 @onready var animater = $CollisionShape2D/AnimationPlayer
 
 var is_attacking = false
-
+var level  = 1
+var lives = randi_range(2,7)
+func _ready() -> void:
+	print(lives)
 func _physics_process(delta: float) -> void:
+	if lives == 0:
+		get_tree().call_deferred("reload_current_scene") 
 	if is_attacking:
 		return
 
@@ -34,6 +39,7 @@ func _physics_process(delta: float) -> void:
 			animatedsprite.play("run")
 		velocity.x = direction * SPEED
 	elif Input.is_action_just_pressed("attack") and animatedsprite.animation != "attack":
+		lives -= 1
 		animater.play("battack")
 		is_attacking = true
 		animatedsprite.play("attack")
@@ -46,7 +52,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if animatedsprite.animation != "default":
 			animatedsprite.play("default")
-
+	
 	# Apply the movement
 	move_and_slide()
 
@@ -54,5 +60,5 @@ func _physics_process(delta: float) -> void:
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animatedsprite.animation == "attack":
-		is_attacking = false
 		animater.play("RESET")
+		is_attacking = false
