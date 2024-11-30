@@ -1,10 +1,12 @@
-[gd_scene load_steps=47 format=3 uid="uid://bpf5tsmjbdgm"]
+[gd_scene load_steps=57 format=3 uid="uid://bpf5tsmjbdgm"]
 
 [ext_resource type="Script" path="res://Scripts/movement.gd" id="1_twpvt"]
 [ext_resource type="Texture2D" uid="uid://d4be0r80k55vk" path="res://Gamefiles/Character/Attack-01/Attack-01-Sheet.png" id="2_eadcv"]
+[ext_resource type="Texture2D" uid="uid://bgh08v3n0onbd" path="res://Gamefiles/Character/Dead/Dead-Sheet.png" id="3_lcw48"]
 [ext_resource type="Texture2D" uid="uid://cy4h3by3srm1a" path="res://Gamefiles/Character/Idle/Idle-Sheet.png" id="3_oan30"]
 [ext_resource type="Texture2D" uid="uid://jj7ii8gcpkl7" path="res://Gamefiles/Character/Jumlp-All/Jump-All-Sheet.png" id="4_m86p2"]
 [ext_resource type="Texture2D" uid="uid://hlehijrd6s4w" path="res://Gamefiles/Character/Run/Run-Sheet.png" id="5_tjar4"]
+[ext_resource type="AudioStream" uid="uid://ddvlkf4ol0j7s" path="res://sword.mp3" id="6_t5bny"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6qhx1"]
 atlas = ExtResource("2_eadcv")
@@ -37,6 +39,38 @@ region = Rect2(576, 0, 96, 80)
 [sub_resource type="AtlasTexture" id="AtlasTexture_hxs6n"]
 atlas = ExtResource("2_eadcv")
 region = Rect2(672, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jj6nw"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7e8t"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csnqw"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqvqi"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ggfw"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tia5d"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tt2w"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ioia4"]
+atlas = ExtResource("3_lcw48")
+region = Rect2(560, 0, 80, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0bc50"]
 atlas = ExtResource("3_oan30")
@@ -175,6 +209,35 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jj6nw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7e8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csnqw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqvqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ggfw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tia5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tt2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ioia4")
+}],
+"loop": false,
+"name": &"death",
 "speed": 12.0
 }, {
 "frames": [{
@@ -324,6 +387,7 @@ script = ExtResource("1_twpvt")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -25)
 sprite_frames = SubResource("SpriteFrames_cdpv4")
+animation = &"jump"
 autoplay = "default"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
@@ -339,5 +403,9 @@ disabled = true
 libraries = {
 "": SubResource("AnimationLibrary_0nph2")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_t5bny")
+volume_db = 3.0
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

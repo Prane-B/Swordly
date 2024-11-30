@@ -1,22 +1,35 @@
 extends CharacterBody2D
 
 const SPEED = 200.0
-const JUMP_VELOCITY = -350.0
+const JUMP_VELOCITY = -325.0
 
 @onready var animatedsprite = $AnimatedSprite2D
 @onready var animater = $CollisionShape2D/AnimationPlayer
+@onready var sound = $AudioStreamPlayer2D
 
 var is_attacking = false
 var level  = 1
-var lives = randi_range(2,7)
-func _ready() -> void:
-	print(lives)
+var lives = randi_range(3,7)
+var dead = 1
+
 func _physics_process(delta: float) -> void:
 	if lives == 0:
 		get_tree().call_deferred("reload_current_scene") 
+	if Input.is_action_just_pressed("attack") and animatedsprite.animation != "attack":
+		sound.play()
+		lives -= 1
+		animater.play("battack")
+		is_attacking = true
+		animatedsprite.play("attack")	
+		
 	if is_attacking:
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+		if is_on_floor():
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+		move_and_slide()
 		return
-
+	print(animatedsprite.animation)
 	# Handle gravity if in the air
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -38,11 +51,6 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor() and animatedsprite.animation != "run":
 			animatedsprite.play("run")
 		velocity.x = direction * SPEED
-	elif Input.is_action_just_pressed("attack") and animatedsprite.animation != "attack":
-		lives -= 1
-		animater.play("battack")
-		is_attacking = true
-		animatedsprite.play("attack")
 	elif not is_on_floor():
 		# Keep the jump animation if in the air
 		if animatedsprite.animation != "jump":
@@ -55,6 +63,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Apply the movement
 	move_and_slide()
+		
 
 
 
