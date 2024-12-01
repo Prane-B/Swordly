@@ -63,10 +63,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Apply the movement
 	move_and_slide()
-		
-
-
-
+	
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animatedsprite.animation == "attack":
 		animater.play("RESET")
